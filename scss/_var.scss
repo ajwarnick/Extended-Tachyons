@@ -1,0 +1,48 @@
+
+
+
+
+// $sans-serif: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif !default;
+// $serif: georgia, serif !default;
+// $code: consolas, monaco, monospace !default;
+
+$serif: 'Gamja Flower', cursive;
+
+$main_font: $serif;
+
+$monospace: Consolas, monaco, monospace;
+$background: lightgray;
+
+
+
+
+
+///// COLORS ///////
+$percentage_to_lighten: 70%;
+
+$orange: #FF8000;
+$washed-orange: mix(white, $orange, $percentage_to_lighten);
+
+$yellow: #FFFF00;
+$light-yellow: #FFFF99;
+$washed-yellow: mix(white, $light-yellow, $percentage_to_lighten);
+
+$light-purple: #a463f2 !default;
+$washed-purple: mix(white, $light-purple, $percentage_to_lighten);
+
+$dark-green: #005900;
+$green: #00A500;
+$light-green: #00F200;
+$washed-green: mix(white, $light-green, $percentage_to_lighten);
+
+
+$dark-blue: #061E8A;
+$blue: #0A10D6;
+$light-blue: #383DD6;
+$washed-blue: mix(white, $light-blue, $percentage_to_lighten);
+
+
+$dark-red: #800000;
+$red: #EB0002;
+$light-red: #FF8080;
+$washed-red: mix(white, $light-red, $percentage_to_lighten);

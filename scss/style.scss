@@ -1,4 +1,16 @@
-body{
+@import "font";
+@import "var";
+@import "mixins";
+@import "node_modules/tachyons-sass/tachyons";
 
-    background: black;
+@import "features/blend-mode";
+@import "features/columns";
+
+@import "background";
+
+code, .code {
+    font-family: $monospace;
 }
+
+
+

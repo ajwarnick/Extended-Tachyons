@@ -1,0 +1,196 @@
+.clmn {
+
+    
+    p:first-of-type {
+        margin-top:0;
+    }
+
+    @mixin column-width( $column-number: 2){
+        column-count: $column-number;
+        &.cl-measure-wide {  
+            max-width: calc(34em * $column-number);
+        }
+        &.cl-measure{
+            max-width: calc(30em * $column-number);
+        }
+        &.cl-measure-narrow{
+            max-width: calc(20em * $column-number);
+        }
+    }
+
+    &.clmn2 {
+        @include column-width(2);
+    }
+
+    &.clmn3 {
+        @include column-width(3);
+    }
+
+    &.clmn4 {
+        @include column-width(4);
+    }
+
+    
+
+    ///////// COLUMNS WIDTH ///////// 
+    
+    &.cl-measure-wide {  
+        max-width: calc(34em * 2);
+    }
+    &.cl-measure{
+        max-width: calc(30em * 2);
+    }
+    &.cl-measure-narrow{
+        max-width: calc(20em * 2);
+    }
+
+    ///////// COLUMN GAP ///////// 
+    //change the values
+    &.clg1 { column-gap: 1rem; }
+    &.clg2 { column-gap: 2rem; }
+    &.clg3 { column-gap: 3rem; }
+    &.clg4 { column-gap: 5rem; }
+    &.clg5 { column-gap: 7rem; }
+    &.clg6 { column-gap: 10rem; }
+
+  
+     ///////// BORDER STYLES ///////// 
+    /*
+    Docs: http://tachyons.io/docs/themes/borders/
+    Depends on base border module in _borders.css
+    Base:
+        b = column-rule-style
+    Modifiers:
+        --none   = none
+        --dotted = dotted
+        --dashed = dashed
+        --solid  = solid
+    Media Query Extensions:
+        -ns = not-small
+        -m  = medium
+        -l  = large
+    */
+
+    &.c--dotted { column-rule-style: dotted; }
+    &.c--dashed { column-rule-style: dashed; }
+    &.c--solid {  column-rule-style: solid; }
+    &.c--none {   column-rule-style: none; }
+
+    @media #{$breakpoint-not-small} {
+        &.c--dotted-ns { column-rule-style: dotted; }
+        &.c--dashed-ns { column-rule-style: dashed; }
+        &.c--solid-ns {  column-rule-style: solid; }
+        &.c--none-ns {   column-rule-style: none; }
+    }
+
+    @media #{$breakpoint-medium} {
+        &.c--dotted-m { column-rule-style: dotted; }
+        &.c--dashed-m { column-rule-style: dashed; }
+        &.c--solid-m {  column-rule-style: solid; }
+        &.c--none-m {   column-rule-style: none; }
+    }
+
+    @media #{$breakpoint-large} {
+        &.c--dotted-l { column-rule-style: dotted; }
+        &.c--dashed-l { column-rule-style: dashed; }
+        &.c--solid-l {  column-rule-style: solid; }
+        &.c--none-l {   column-rule-style: none; }
+    }
+
+
+
+    ///////// COLORS ///////// 
+
+    &.c--black {        column-rule-color: $black; }
+    &.c--near-black {   column-rule-color: $near-black; }
+    &.c--dark-gray {    column-rule-color: $dark-gray; }
+    &.c--mid-gray {     column-rule-color: $mid-gray; }
+    &.c--gray {         column-rule-color: $gray; }
+    &.c--silver {       column-rule-color: $silver; }
+    &.c--light-silver { column-rule-color: $light-silver; }
+    &.c--moon-gray {    column-rule-color: $moon-gray; }
+    &.c--light-gray {   column-rule-color: $light-gray; }
+    &.c--near-white {   column-rule-color: $near-white; }
+    &.c--white {        column-rule-color: $white; }
+
+    &.c--white-90 {   column-rule-color: $white-90; }
+    &.c--white-80 {   column-rule-color: $white-80; }
+    &.c--white-70 {   column-rule-color: $white-70; }
+    &.c--white-60 {   column-rule-color: $white-60; }
+    &.c--white-50 {   column-rule-color: $white-50; }
+    &.c--white-40 {   column-rule-color: $white-40; }
+    &.c--white-30 {   column-rule-color: $white-30; }
+    &.c--white-20 {   column-rule-color: $white-20; }
+    &.c--white-10 {   column-rule-color: $white-10; }
+    &.c--white-05 {   column-rule-color: $white-05; }
+    &.c--white-025 {   column-rule-color: $white-025; }
+    &.c--white-0125 {   column-rule-color: $white-0125; }
+
+    &.c--black-90 {   column-rule-color: $black-90; }
+    &.c--black-80 {   column-rule-color: $black-80; }
+    &.c--black-70 {   column-rule-color: $black-70; }
+    &.c--black-60 {   column-rule-color: $black-60; }
+    &.c--black-50 {   column-rule-color: $black-50; }
+    &.c--black-40 {   column-rule-color: $black-40; }
+    &.c--black-30 {   column-rule-color: $black-30; }
+    &.c--black-20 {   column-rule-color: $black-20; }
+    &.c--black-10 {   column-rule-color: $black-10; }
+    &.c--black-05 {   column-rule-color: $black-05; }
+    &.c--black-025 {   column-rule-color: $black-025; }
+    &.c--black-0125 {   column-rule-color: $black-0125; }
+
+    &.c--dark-red { column-rule-color: $dark-red; }
+    &.c--red { column-rule-color: $red; }
+    &.c--light-red { column-rule-color: $light-red; }
+    &.c--orange { column-rule-color: $orange; }
+    &.c--gold { column-rule-color: $gold; }
+    &.c--yellow { column-rule-color: $yellow; }
+    &.c--light-yellow { column-rule-color: $light-yellow; }
+    &.c--purple { column-rule-color: $purple; }
+    &.c--light-purple { column-rule-color: $light-purple; }
+    &.c--dark-pink { column-rule-color: $dark-pink; }
+    &.c--hot-pink { column-rule-color: $hot-pink; }
+    &.c--pink { column-rule-color: $pink; }
+    &.c--light-pink { column-rule-color: $light-pink; }
+    &.c--dark-green { column-rule-color: $dark-green; }
+    &.c--green { column-rule-color: $green; }
+    &.c--light-green { column-rule-color: $light-green; }
+    &.c--navy { column-rule-color: $navy; }
+    &.c--dark-blue { column-rule-color: $dark-blue; }
+    &.c--blue { column-rule-color: $blue; }
+    &.c--light-blue { column-rule-color: $light-blue; }
+    &.c--lightest-blue { column-rule-color: $lightest-blue; }
+    &.c--washed-blue { column-rule-color: $washed-blue; }
+    &.c--washed-green { column-rule-color: $washed-green; }
+    &.c--washed-yellow { column-rule-color: $washed-yellow; }
+    &.c--washed-red { column-rule-color: $washed-red; }
+
+    &.c--transparent { column-rule-color: $transparent; }
+    &.c--inherit { column-rule-color: inherit; }
+
+
+
+
+    ///////// WIDTHS ///////// 
+
+    &.cw0{
+        column-rule-width: 0;
+    }   
+    &.cw1{
+        column-rule-width: .125rem; ;
+    } 
+    &.cw2{
+        column-rule-width: .25rem;;
+    } 
+    &.cw3{
+        column-rule-width: .5rem;
+    } 
+    &.cw4{
+        column-rule-width: 1rem;
+    } 
+    &.cw5{
+        column-rule-width: 2rem;
+    } 
+
+ 
+}
