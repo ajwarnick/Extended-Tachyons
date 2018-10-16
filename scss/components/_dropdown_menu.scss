@@ -1,0 +1,22 @@
+.dropdownSecondLayer{
+    ul{
+        list-style-type:none;
+        li{
+            display: inline-block;
+            position: relative;
+            &:hover{
+                .sub-menu{
+                    display:block;
+                }
+            }
+        }
+    }
+    .sub-menu{
+        display:none;
+        position: absolute;
+        li{
+            display: block;
+            min-width: 10em;
+        }
+    }
+}

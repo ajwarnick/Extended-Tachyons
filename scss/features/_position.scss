@@ -1,0 +1,13 @@
+.sticky { position: sticky; top:0;}
+ 
+@media (--breakpoint-not-small) {
+    .sticky-ns { position: sticky; top:0; }
+}
+
+@media (--breakpoint-medium) {
+    .sticky-m { position: sticky; top:0; }
+}
+
+@media (--breakpoint-large) {
+    .sticky-l { position: sticky; top:0; }
+}

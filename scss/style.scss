@@ -1,16 +1,26 @@
-@import "font";
 @import "var";
 @import "mixins";
+@import "font";
 @import "node_modules/tachyons-sass/tachyons";
 
 @import "features/blend-mode";
 @import "features/columns";
+@import "features/background";
+@import "features/position";
 
-@import "background";
+@import "components/dropdown_menu";
 
-code, .code {
-    font-family: $monospace;
+
+
+
+// @extend #{'.my-class', '.my-other-class'};
+.testlink{
+
+    @extend .link; 
+    @extend .b;
+    @extend .f5;
+    @extend .dim;
+    @extend .dark-gray;
+    @extend .dib;
+    @extend .pb2;
 }
-
-
-
