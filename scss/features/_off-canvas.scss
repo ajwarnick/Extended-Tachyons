@@ -1,0 +1,81 @@
+$leftSidebarSize: 600px;
+$rightSidebarSize: 600px;
+
+$transition:300ms ease all;
+
+$opacity: .25;
+
+#offcanvas--wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.offcanvas--canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  
+  -webkit-transition: $transition;
+  transition: $transition;
+ 
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; 
+  
+  opacity: 1;
+}
+
+.offcanvas--content{
+  min-height: 100vh;
+}
+
+.offcanvas--show--right .offcanvas--canvas {
+  -webkit-transform: translateX($rightSidebarSize * -1);
+  transform: translateX($rightSidebarSize * -1);
+  
+  -webkit-transform: translate3d( ($rightSidebarSize * -1), 0, 0);
+  transform: translate3d( ($rightSidebarSize * -1), 0, 0);
+}
+
+.offcanvas--show--left .offcanvas--canvas {
+  -webkit-transform: translateX($leftSidebarSize);
+  transform: translateX($leftSidebarSize);
+  
+  -webkit-transform: translate3d($leftSidebarSize, 0, 0);
+  transform: translate3d($leftSidebarSize, 0, 0);
+}
+
+.offcanvas--show--right .offcanvas--content{
+  opacity: $opacity;
+}
+
+.offcanvas--show--left .offcanvas--content{
+  opacity: $opacity;
+}
+
+.offcanvas--canvas .offcanvas--left--sidebar {
+  width: $leftSidebarSize;
+  //height: 100%;
+  position: absolute;
+  top: 0;
+  left: $leftSidebarSize * -1;
+}
+
+.offcanvas--canvas .offcanvas--right--sidebar {
+  width: $rightSidebarSize;
+  //height: 100%;
+  position: absolute;
+  top: 0;
+  right: ($rightSidebarSize * -1);
+}
+
+
+.close-nav{
+    
+}

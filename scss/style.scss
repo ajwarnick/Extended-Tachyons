@@ -7,20 +7,43 @@
 @import "features/columns";
 @import "features/background";
 @import "features/position";
+@import "features/flip";
+@import "features/edges";
+@import "features/rotate";
+
 
 @import "components/dropdown_menu";
 
+@import "menu/nav";
+@import "menu/blockquote";
 
 
-
-// @extend #{'.my-class', '.my-other-class'};
 .testlink{
 
-    @extend .link; 
+    @extend .link;
     @extend .b;
     @extend .f5;
     @extend .dim;
-    @extend .dark-gray;
+    @extend .washed-blue;
     @extend .dib;
     @extend .pb2;
+}
+
+body{
+    @extend .serif;
+}
+
+a{
+    @extend .link;
+    @extend .black;
+
+    &:visited{
+        @extend .black;
+    }
+}
+
+
+.post-edit-link{
+    @extend .bt;
+
 }

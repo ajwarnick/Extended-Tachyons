@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+//https://fonts.google.com/specimen/Playfair+Display
+@import url('https://fonts.googleapis.com/css?family=Eczar:400,800');
+
+$serif: 'Eczar', serif;
+$main_font: $serif;
+
 
 code, .code {
     font-family: $monospace;
