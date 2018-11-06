@@ -1,0 +1,134 @@
+// Converted Variables
+$blur-rem: .1rem;
+
+// Custom Media Query Variables
+
+
+/*
+    FILTERS
+    Docs: 
+
+    https://css-tricks.com/almanac/properties/f/filter/
+*/
+
+/*
+
+    Modifiers
+    1 = 1st step in scale
+    2 = 2nd step in scale
+    3 = 3rd step in scale
+    4 = 4th step in scale
+    5 = 5th step in scale
+
+    -0    = literal value 0%
+    -10   = literal value 10%
+    -25   = literal value 25%
+    -50   = literal value 50%
+    -75   = literal value 75%
+    -100  = literal value 100%
+
+    Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+
+
+// make steps maybe using rem or em //
+.blur1{ filter:blur( $blur-rem*1 ); }
+.blur2{ filter:blur( $blur-rem*2 ); }
+.blur3{ filter:blur( $blur-rem*3 ); }
+.blur4{ filter:blur( $blur-rem*4 ); }
+.blur5{ filter:blur( $blur-rem*5 ); }
+
+
+// between 0 and 360 //
+.hr-90{ filter:hue-rotate(90deg); }
+
+.invert{ filter:invert(100%); }
+
+.gray-0 { filter: grayscale(0); }
+.gray-10 { filter: grayscale(10%); }
+.gray-25 { filter: grayscale(25%); }
+.gray-50 { filter: grayscale(50%); }
+.gray-75 { filter: grayscale(75%); }
+.gray-100 { filter: grayscale(100%); }
+
+.op-0 { filter:opacity(0%); }
+.op-10 { filter:opacity(10%); }
+.op-25 { filter:opacity(25%); }
+.op-50 { filter:opacity(50%); }
+.op-75 { filter:opacity(75%); }
+.op-75 { filter:opacity(100%); }
+
+.sepia-0 { filter:sepia(0%); }
+.sepia-10 { filter:sepia(10%); }
+.sepia-25 { filter:sepia(25%); }
+.sepia-50 { filter:sepia(50%); }
+.sepia-75 { filter:sepia(75%); }
+.sepia-100 { filter:sepia(100%); }
+
+@media #{$breakpoint-not-small} {
+    .gray-0-ns { filter: grayscale(0); }
+    .gray-25-ns { filter: grayscale(25%); }
+    .gray-50-ns { filter: grayscale(50%); }
+    .gray-75-ns { filter: grayscale(75%); }
+    .gray-100-ns { filter: grayscale(100%); }
+
+    .invert-ns { filter:invert(100%); }
+
+    .op-0-ns { filter:opacity(0%); }
+    .op-25-ns { filter:opacity(25%); }
+    .op-50-ns { filter:opacity(50%); }
+    .op-75-ns { filter:opacity(75%); }
+    .op-100-ns { filter:opacity(100%); }
+
+    .sepia-0-ns { filter:sepia(0%); }
+    .sepia-10-ns { filter:sepia(10%); }
+    .sepia-25-ns { filter:sepia(25%); }
+    .sepia-50-ns { filter:sepia(50%); }
+    .sepia-75-ns { filter:sepia(75%); }
+    .sepia-100-ns { filter:sepia(100%); }
+}
+  
+@media #{$breakpoint-medium} {
+    .gray-0-m { filter: grayscale(0); }
+    .gray-25-m { filter: grayscale(25%); }
+    .gray-50-m { filter: grayscale(50%); }
+    .gray-75-m { filter: grayscale(75%); }
+    .gray-100-m { filter: grayscale(100%); }
+    .invert-m { filter:invert(100%); }
+    .op-0-m { filter:opacity(0%); }
+    .op-25-m { filter:opacity(25%); }
+    .op-50-m { filter:opacity(50%); }
+    .op-75-m { filter:opacity(75%); }
+    .op-100-m { filter:opacity(100%); }
+
+    .sepia-0-m { filter:sepia(0%); }
+    .sepia-10-m { filter:sepia(10%); }
+    .sepia-25-m { filter:sepia(25%); }
+    .sepia-50-m { filter:sepia(50%); }
+    .sepia-75-m { filter:sepia(75%); }
+    .sepia-100-m { filter:sepia(100%); }
+}
+
+@media #{$breakpoint-large} {
+    .gray-0-l { filter: grayscale(0); }
+    .gray-25-l { filter: grayscale(25%); }
+    .gray-50-l { filter: grayscale(50%); }
+    .gray-75-l { filter: grayscale(75%); }
+    .gray-100-l { filter: grayscale(100%); }
+    .invert-l { filter:invert(100%); }
+    .op-0-l { filter:opacity(0%); }
+    .op-25-l { filter:opacity(25%); }
+    .op-50-l { filter:opacity(50%); }
+    .op-75-l { filter:opacity(75%); }
+    .op-100-l { filter:opacity(100%); }
+
+    .sepia-0-l { filter:sepia(0%); }
+    .sepia-10-l { filter:sepia(10%); }
+    .sepia-25-l { filter:sepia(25%); }
+    .sepia-50-l { filter:sepia(50%); }
+    .sepia-75-l { filter:sepia(75%); }
+    .sepia-100-l { filter:sepia(100%); }
+}
