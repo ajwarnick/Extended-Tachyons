@@ -23,10 +23,9 @@ $color) {
 }
 
 
-
 .nav{
     ul{
-        @extend .list; 
+        @extend .list;
         @extend .cf;
     }
 }
@@ -100,6 +99,3 @@ $color) {
         }
     }
 }
-
-
-

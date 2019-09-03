@@ -10,6 +10,7 @@
 @import "features/flip";
 @import "features/edges";
 @import "features/rotate";
+@import "features/filter";
 
 
 @import "components/dropdown_menu";
@@ -17,6 +18,7 @@
 
 @import "menu/nav";
 @import "menu/blockquote";
+
 
 
 .testlink{
@@ -28,6 +30,7 @@
     @extend .washed-blue;
     @extend .dib;
     @extend .pb2;
+
 }
 
 body{
@@ -35,6 +38,7 @@ body{
 }
 
 a{
+
     @extend .link;
     @extend .black;
 
@@ -42,6 +46,7 @@ a{
         @extend .black;
     }
 }
+
 
 
 .post-edit-link{

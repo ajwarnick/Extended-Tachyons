@@ -31,6 +31,10 @@ mix-blend-mode: unset;
     background-blend-mode: overlay;
 }
 
+.bg-bm-multiply{
+  background-blend-mode: multiply;
+}
+
 .bg-bm-screen{
     background-blend-mode: screen;
 }
